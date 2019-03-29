@@ -1,0 +1,198 @@
+[
+	{
+		"title": "Karolou Ntil 31",
+		"description": "L shaped area available to put a green space",
+		"type": "Mixed Use",
+		"img": "/img/IMG_1439.JPEG",
+		"garden_present": false,
+		"coord": [40.6334527777, 22.944052777]
+	},
+	{
+		"title": "Ermou 65",
+		"type": "Residential",
+		"description": "Large vertical space next to balconies",
+		"img": "/img/IMG_1441.JPEG",
+		"garden_present": false,
+		"coord": [40.6342555,22.94456944]
+	},
+	{
+		"title": "Residential Tower By Egnatia",
+		"type": "Residential",
+		"description": "Large blank side to building next to square",
+		"img": "/img/IMG_1443.JPEG",
+		"garden_present": false,
+		"coord": [40.634491666,22.9449888]
+	},
+	{
+		"title": "Restaurant Building with Vines",
+		"type": "Mixed Use",
+		"description": "",
+		"img": "/img/IMG_1444.JPEG",
+		"garden_present": true,
+		"coord": [40.63510833,22.9443]
+	},
+	{
+		"title": "Blank wall on top floor",
+		"type": "Mixed Use",
+		"description": "Good spot to put an urban garden to get attention from people walking on the street",
+		"img": "/img/IMG_1447.JPEG",
+		"garden_present": false,
+		"coord": [40.63709722,22.94301666]
+	},
+	{
+		"title": "Vertical blank walls",
+		"type": "Mixed Use",
+		"description": "",
+		"img": "/img/IMG_1448.JPEG",
+		"garden_present": true,
+		"coord": [40.6370555,22.94195833]
+	},
+	{
+		"title": "Graffiti wall on building",
+		"type": "Mixed Use",
+		"description": "Wall with graffiti, could be revitalized",
+		"img": "/img/IMG_1451.JPEG",
+		"garden_present": false,
+		"coord": [40.6372555,22.9416055]
+	},
+	{
+		"title": "",
+		"type": "Hotel",
+		"description": "",
+		"garden_present": false,
+		"img": "/img/IMG_1453.JPEG",
+		"coord": [40.638925,22.938336111]
+	},
+	{
+		"title": "",
+		"type": "Mixed Use",
+		"description": "",
+		"garden_present": false,
+		"img": "/img/IMG_1456.JPEG",
+		"coord": [40.6393,22.937347222]
+	},
+	{
+		"title": "Blank Sided Residential Building",
+		"type": "Mixed Use",
+		"description": "Large blank side, suitable for a vertical garden or trellis",
+		"garden_present": false,
+		"img": "/img/IMG_1460.JPEG",
+		"coord": [40.63945,22.93734444]
+	},
+	{
+		"title": "Abandoned Storefront",
+		"type": "Abandoned",
+		"description": "Large blank wall",
+		"garden_present": false,
+		"img": "/img/IMG_1461.JPEG",
+		"coord": [40.64,22.9359944]
+	},
+	{
+		"title": "Abandoned area with large green walls",
+		"type": "Residential",
+		"description": "Opposite to an abandoned storefront, large residential building with blank walls",
+		"garden_present": false,
+		"img": "/img/IMG_1464.JPEG",
+		"coord": [40.639847222,22.9349222]
+	},
+	{
+		"title": "Large blank urban wall",
+		"type": "Residential",
+		"description": "Large blank wall with graffiti",
+		"garden_present": false,
+		"img": "/img/IMG_1471.JPEG",
+		"coord": [40.6401666,22.93472777]
+	},
+	{
+		"title": "Urban blank walls",
+		"type": "Mixed Use",
+		"description": "",
+		"garden_present": false,
+		"img": "/img/IMG_1474.JPEG",
+		"coord": [40.640286111,22.934075]
+	},
+	{
+		"title": "Urban blank wall",
+		"type": "Mixed Use",
+		"description": "",
+		"img": "/img/IMG_1476.JPEG",
+		"coord": [40.6403277,22.934125]
+	},
+	{
+		"title": "Large urban blank wall",
+		"type": "Residential",
+		"description": "Good area for a trellis or vines",
+		"img": "/img/IMG_1480.JPEG",
+		"coord": [40.64045,22.932444]
+	},
+	{
+		"title": "Internal residential blank wall",
+		"type": "Residential",
+		"description": "internal courtyard for a residential wall",
+		"img": "/img/IMG_1481.JPEG",
+		"coord": [40.64036111,22.933441666]
+	},
+	{
+		"title": "Blank residential wall",
+		"type": "Mixed Use",
+		"description": "",
+		"img": "/img/IMG_1485.JPEG",
+		"coord": [40.6403388,22.93704722]
+	},
+	{
+		"title": "Blank wall above city streets",
+		"type": "Mixed Use",
+		"description": "",
+		"img": "/img/IMG_1486.JPEG",
+		"coord": [40.640308333,22.939108333]
+	},
+	{
+		"title": "Large residential building side",
+		"type": "Residential",
+		"description": "",
+		"img": "/img/IMG_1490.JPEG",
+		"coord": [40.64045277,22.9398833]
+	},
+	{
+		"title": "Mixed use blank wall",
+		"type": "Mixed Use",
+		"description": "",
+		"img": "/img/IMG_1492.JPEG",
+		"coord": [40.640097222,22.9441666]
+	},
+	{
+		"title": "Mixed use blank wall",
+		"type": "Mixed Use",
+		"description": "",
+		"img": "/img/IMG_1498.JPEG",
+		"coord": [40.63738611,22.9494333]
+	},
+	{
+		"title": "Public structure blank wall",
+		"type": "Public Structure",
+		"description": "",
+		"img": "/img/IMG_1500.JPEG",
+		"coord": [40.637188,22.949355]
+	},
+	{
+		"title": "Large residential wall",
+		"type": "Residential",
+		"description": "",
+		"img": "/img/IMG_1501.JPEG",
+		"coord": [40.6372111,22.9494166]
+	},
+	{
+		"title": "Large residential wall",
+		"type": "Residential",
+		"description": "",
+		"img": "/img/IMG_1504.JPEG",
+		"coord": [40.63681388,22.9497277]
+	},
+	{
+		"title": "Large urban blank wall",
+		"type": "Mixed Use",
+		"description": "",
+		"img": "/img/IMG_1507.JPEG",
+		"coord": [40.6368405,22.94969444]
+	}
+]
