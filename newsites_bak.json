@@ -242,24 +242,21 @@
 		"type": "Commercial",
 		"description": "",
 		"img": "/img/IMG_1919.JPEG",
-		"coord": [40.630414,22.953661],
-		"icon": "commercial"
+		"coord": [40.630414,22.953661]
 	},
 	{
 		"title": "Restaurant",
 		"type": "Commercial",
 		"description": "",
 		"img": "/img/IMG_1920.JPEG",
-		"coord": [40.628803,22.952653],
-		"icon": "commercial"
+		"coord": [40.628803,22.952653]
 	},
 	{
 		"title": "Municipal Building",
 		"type": "Government",
 		"description": "",
 		"img": "/img/IMG_1921.JPEG",
-		"coord": [40.628625,22.953147],
-		"icon": "commercial"
+		"coord": [40.628625,22.953147]
 	},
 	{
 		"title": "Residential Tower",
@@ -274,8 +271,7 @@
 		"type": "Commercial",
 		"description": "",
 		"img": "/img/IMG_1925.JPEG",
-		"coord": [40.627767,22.950197],
-		"icon": "commercial"
+		"coord": [40.627767,22.950197]
 	},
 	{
 		"title": "Large Hotel Wall",
@@ -346,8 +342,7 @@
 		"type": "Commercial",
 		"description": "",
 		"img": "/img/IMG_1940.JPEG",
-		"coord": [40.630139,22.944403],
-		"icon": "commercial"
+		"coord": [40.630139,22.944403]
 	},
 	{
 		"title": "Residential Wall",
@@ -370,23 +365,20 @@
 		"type": "Commercial",
 		"description": "",
 		"img": "/img/IMG_1945.JPEG",
-		"coord": [40.633122,22.940372],
-		"icon": "commercial"
+		"coord": [40.633122,22.940372]
 	},
 	{
 		"title": "Office Wall",
 		"type": "Commercial",
 		"description": "",
 		"img": "/img/IMG_1947.JPEG",
-		"coord": [40.634617,22.939592],
-		"icon": "commercial"
+		"coord": [40.634617,22.939592]
 	},
 	{
 		"title": "Storefront",
 		"type": "Commercial",
 		"description": "",
 		"img": "/img/IMG_1950.JPEG",
-		"coord": [40.634033,22.947800],
-		"icon": "commercial"
+		"coord": [40.634033,22.947800]
 	}
 ]
