@@ -5,31 +5,67 @@ var map = new L.Map("map", {
     zoom: 15
 });
 map.addLayer(layer);
-// add the data layers
 var layers = L.control.layers({},{}).addTo(map);
+// add the AirBnB cost heatmap
 $.getJSON("airbnbcost.json", function(obj) {
 	var heat = L.heatLayer(obj, {radius: 15}).addTo(map);
 	layers.addOverlay(heat, "AirBnB Cost");
 });
+// add the relative green space for 200m and 400m
 var greenFill = "#30db47";
-$.getJSON("greenSpaces_200m.geojson", function(obj) {
-	var highestAmt = 0;
-	obj.forEach(function(feature) {
-		if(highestAmt < feature.properties.greenSpaceM) {
-			highestAmt = feature.properties.greenSpaceM;
-		}
+["200m", "400m"].forEach(function(radius) {
+	$.getJSON(`greenSpaces_${radius}_castle.geojson`, function(obj) {
+		var highestAmt = 0;
+		obj.forEach(function(feature) {
+			if(highestAmt < feature.properties.greenSpaceM) {
+				highestAmt = feature.properties.greenSpaceM;
+			}
+		});
+		var greenSpace = L.geoJSON(obj, {
+	   		style: function(feature) {
+			percent = feature.properties.greenSpaceM/highestAmt;
+			return {
+				stroke: 0,
+				fillColor: "#30db47",
+				fillOpacity: percent
+			};
+	   	}
+		}).addTo(map);
+		layers.addBaseLayer(greenSpace, `Relative Green Space (${radius})`);
 	});
-	var greenSpace = L.geoJSON(obj, {
-	   style: function(feature) {
-		percent = feature.properties.greenSpaceM/highestAmt;
-		return {
-			stroke: 0,
-			fillColor: "#30db47",
-			fillOpacity: percent
-		};
-	   }
+});
+// add like and dislike layers
+$.getJSON("likedregions.geojson", function(obj) {
+	var likedRegion = L.geoJSON(obj, {style: function(feature) {
+			return {
+				stroke: 0,
+				fillColor: "#30db47",
+				fillOpacity: feature.properties.value/20
+			}
+		}}).addTo(map);
+	layers.addOverlay(likedRegion, "Liked Regions");
+});
+$.getJSON("dislikedregions.geojson", function(obj) {
+	var dislikedRegion = L.geoJSON(obj, {style: function(feature) {
+			return {
+				stroke: 0,
+				fillColor: "#ff0000",
+				fillOpacity: feature.properties.value/20
+			}
+		}}).addTo(map);
+	layers.addOverlay(dislikedRegion, "Disliked Regions");
+});
+// add pedestrian axis layers
+$.getJSON("pedestrianaxis.geojson", function(obj) {
+	var pedestrianData = L.geoJSON(obj, {
+		style: function(feature) {
+			return {
+				"color": feature.properties.color,
+				"weight": 18
+			};
+		}
 	}).addTo(map);
-	layers.addOverlay(greenSpace, "Relative Green Space");
+	layers.addOverlay(pedestrianData, "Pedestrian Data");
 });
 // create the icons for the markers
 var pinTypes = {
@@ -45,6 +81,9 @@ var pinTypeNames = ["Hospital Sites", "Hotel Sites", "Residential Sites",
 Object.keys(pinTypes).forEach(function(pinName) {
 	var pin = L.icon({
 		iconUrl: `/icons/${pinTypes[pinName]}`,
+		shadowUrl: "/icons/pinshadow.svg",
+		shadowSize: [30,30],
+		shadowAnchor: [5,24],
 		iconSize: [30,30],
 		iconAnchor: [15,30],
 		popupAnchor: [0,0]
@@ -91,11 +130,15 @@ legend.onAdd = function(map) {
 			 <br>
 			 <i style="background-image: url(/icons/residentialpin.svg);"></i> Residential
 			 <br>
+			 <i style="background-image: url(/icons/abandonedpin.svg);"></i> Abandoned
+			 <br>
 			 <i style="background-image: url(/icons/hospitalpin.svg);"></i> Hospital
 			 <br>
 			 <i style="background-image: url(/icons/hotelpin.svg);"></i> Hotel
 			 <br>
 			 <i style="background-image: url(/icons/schoolpin.svg);"></i> School
+			 <br>
+			 <i style="background-image: url(/icons/commercialpin.svg);"></i> Buisiness/Government
 			`;
 	return div;
 };
