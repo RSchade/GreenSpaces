@@ -3,7 +3,7 @@
 		"title": "Karolou Ntil 31",
 		"description": "L shaped area available to put a green space",
 		"type": "Mixed Use",
-		"img": "/img/IMG_1439.JPEG",
+		"img": "img/IMG_1439.JPEG",
 		"garden_present": false,
 		"coord": [40.6334527777, 22.944052777],
 		"icon": "residential"
@@ -12,7 +12,7 @@
 		"title": "Ermou 65",
 		"type": "Residential",
 		"description": "Large vertical space next to balconies",
-		"img": "/img/IMG_1441.JPEG",
+		"img": "img/IMG_1441.JPEG",
 		"garden_present": false,
 		"coord": [40.6342555,22.94456944],
 		"icon": "residential"
@@ -21,7 +21,7 @@
 		"title": "Residential Tower By Egnatia",
 		"type": "Residential",
 		"description": "Large blank side to building next to square",
-		"img": "/img/IMG_1443.JPEG",
+		"img": "img/IMG_1443.JPEG",
 		"garden_present": false,
 		"coord": [40.634491666,22.9449888],
 		"icon": "residential"
@@ -30,7 +30,7 @@
 		"title": "Restaurant Building with Vines",
 		"type": "Mixed Use",
 		"description": "",
-		"img": "/img/IMG_1444.JPEG",
+		"img": "img/IMG_1444.JPEG",
 		"garden_present": true,
 		"coord": [40.63510833,22.9443],
 		"icon": "residential"
@@ -39,7 +39,7 @@
 		"title": "Blank wall on top floor",
 		"type": "Mixed Use",
 		"description": "Good spot to put an urban garden to get attention from people walking on the street",
-		"img": "/img/IMG_1447.JPEG",
+		"img": "img/IMG_1447.JPEG",
 		"garden_present": false,
 		"coord": [40.63709722,22.94301666],
 		"icon": "residential"
@@ -48,7 +48,7 @@
 		"title": "Vertical blank walls",
 		"type": "Mixed Use",
 		"description": "",
-		"img": "/img/IMG_1448.JPEG",
+		"img": "img/IMG_1448.JPEG",
 		"garden_present": true,
 		"coord": [40.6370555,22.94195833],
 		"icon": "residential"
@@ -57,7 +57,7 @@
 		"title": "Graffiti wall on building",
 		"type": "Mixed Use",
 		"description": "Wall with graffiti, could be revitalized",
-		"img": "/img/IMG_1451.JPEG",
+		"img": "img/IMG_1451.JPEG",
 		"garden_present": false,
 		"coord": [40.6372555,22.9416055],
 		"icon": "residential"
@@ -67,7 +67,7 @@
 		"type": "Hotel",
 		"description": "",
 		"garden_present": false,
-		"img": "/img/IMG_1453.JPEG",
+		"img": "img/IMG_1453.JPEG",
 		"coord": [40.638925,22.938336111],
 		"icon": "hotel"
 	},
@@ -76,7 +76,7 @@
 		"type": "Mixed Use",
 		"description": "",
 		"garden_present": false,
-		"img": "/img/IMG_1456.JPEG",
+		"img": "img/IMG_1456.JPEG",
 		"coord": [40.6393,22.937347222],
 		"icon": "residential"
 	},
@@ -85,7 +85,7 @@
 		"type": "Mixed Use",
 		"description": "Large blank side, suitable for a vertical garden or trellis",
 		"garden_present": false,
-		"img": "/img/IMG_1460.JPEG",
+		"img": "img/IMG_1460.JPEG",
 		"coord": [40.63945,22.93734444],
 		"icon": "residential"
 	},
@@ -94,7 +94,7 @@
 		"type": "Abandoned",
 		"description": "Large blank wall",
 		"garden_present": false,
-		"img": "/img/IMG_1461.JPEG",
+		"img": "img/IMG_1461.JPEG",
 		"coord": [40.64,22.9359944],
 		"icon": "abandoned"
 	},
@@ -103,7 +103,7 @@
 		"type": "Residential",
 		"description": "Opposite to an abandoned storefront, large residential building with blank walls",
 		"garden_present": false,
-		"img": "/img/IMG_1464.JPEG",
+		"img": "img/IMG_1464.JPEG",
 		"coord": [40.639847222,22.9349222],
 		"icon": "residential"
 	},
@@ -112,7 +112,7 @@
 		"type": "Residential",
 		"description": "Large blank wall with graffiti",
 		"garden_present": false,
-		"img": "/img/IMG_1471.JPEG",
+		"img": "img/IMG_1471.JPEG",
 		"coord": [40.6401666,22.93472777],
 		"icon": "residential"
 	},
@@ -121,7 +121,7 @@
 		"type": "Mixed Use",
 		"description": "",
 		"garden_present": false,
-		"img": "/img/IMG_1474.JPEG",
+		"img": "img/IMG_1474.JPEG",
 		"coord": [40.640286111,22.934075],
 		"icon": "residential"
 	},
@@ -129,7 +129,7 @@
 		"title": "Urban blank wall",
 		"type": "Mixed Use",
 		"description": "",
-		"img": "/img/IMG_1476.JPEG",
+		"img": "img/IMG_1476.JPEG",
 		"coord": [40.6403277,22.934125],
 		"icon": "residential"
 	},
@@ -137,7 +137,7 @@
 		"title": "Large urban blank wall",
 		"type": "Residential",
 		"description": "Good area for a trellis or vines",
-		"img": "/img/IMG_1480.JPEG",
+		"img": "img/IMG_1480.JPEG",
 		"coord": [40.64045,22.932444],
 		"icon": "residential"
 	},
@@ -145,7 +145,7 @@
 		"title": "Internal residential blank wall",
 		"type": "Residential",
 		"description": "internal courtyard for a residential wall",
-		"img": "/img/IMG_1481.JPEG",
+		"img": "img/IMG_1481.JPEG",
 		"coord": [40.64036111,22.933441666],
 		"icon": "residential"
 	},
@@ -153,7 +153,7 @@
 		"title": "Blank residential wall",
 		"type": "Mixed Use",
 		"description": "",
-		"img": "/img/IMG_1485.JPEG",
+		"img": "img/IMG_1485.JPEG",
 		"coord": [40.6403388,22.93704722],
 		"icon": "residential"
 	},
@@ -161,7 +161,7 @@
 		"title": "Blank wall above city streets",
 		"type": "Mixed Use",
 		"description": "",
-		"img": "/img/IMG_1486.JPEG",
+		"img": "img/IMG_1486.JPEG",
 		"coord": [40.640308333,22.939108333],
 		"icon": "residential"
 	},
@@ -169,7 +169,7 @@
 		"title": "Large residential building side",
 		"type": "Residential",
 		"description": "",
-		"img": "/img/IMG_1490.JPEG",
+		"img": "img/IMG_1490.JPEG",
 		"coord": [40.64045277,22.9398833],
 		"icon": "residential"
 	},
@@ -177,7 +177,7 @@
 		"title": "Mixed use blank wall",
 		"type": "Mixed Use",
 		"description": "",
-		"img": "/img/IMG_1492.JPEG",
+		"img": "img/IMG_1492.JPEG",
 		"coord": [40.640097222,22.9441666],
 		"icon": "residential"
 	},
@@ -185,7 +185,7 @@
 		"title": "Mixed use blank wall",
 		"type": "Mixed Use",
 		"description": "",
-		"img": "/img/IMG_1498.JPEG",
+		"img": "img/IMG_1498.JPEG",
 		"coord": [40.63738611,22.9494333],
 		"icon": "residential"
 	},
@@ -193,7 +193,7 @@
 		"title": "Public structure blank wall",
 		"type": "Public Structure",
 		"description": "",
-		"img": "/img/IMG_1500.JPEG",
+		"img": "img/IMG_1500.JPEG",
 		"coord": [40.637188,22.949355],
 		"icon": "school"
 	},
@@ -201,7 +201,7 @@
 		"title": "Large residential wall",
 		"type": "Residential",
 		"description": "",
-		"img": "/img/IMG_1501.JPEG",
+		"img": "img/IMG_1501.JPEG",
 		"coord": [40.6372111,22.9494166],
 		"icon": "residential"
 	},
@@ -209,7 +209,7 @@
 		"title": "Large residential wall",
 		"type": "Residential",
 		"description": "",
-		"img": "/img/IMG_1504.JPEG",
+		"img": "img/IMG_1504.JPEG",
 		"coord": [40.63681388,22.9497277],
 		"icon": "residential"
 	},
@@ -217,7 +217,7 @@
 		"title": "Large urban blank wall",
 		"type": "Mixed Use",
 		"description": "",
-		"img": "/img/IMG_1507.JPEG",
+		"img": "img/IMG_1507.JPEG",
 		"coord": [40.6368405,22.94969444],
 		"icon": "residential"
 	},
@@ -225,7 +225,7 @@
 		"title": "University Kiosk",
 		"type": "School",
 		"description": "",
-		"img": "/img/IMG_1915.JPEG",
+		"img": "img/IMG_1915.JPEG",
 		"coord": [40.629606,22.956619],
 		"icon": "school"
 	},
@@ -233,7 +233,7 @@
 		"title": "Hotel Wall",
 		"type": "Hotel",
 		"description": "",
-		"img": "/img/IMG_1917.JPEG",
+		"img": "img/IMG_1917.JPEG",
 		"coord": [40.630622,22.953597],
 		"icon": "hotel"
 	},
@@ -241,7 +241,7 @@
 		"title": "Large Storefront Wall",
 		"type": "Commercial",
 		"description": "",
-		"img": "/img/IMG_1919.JPEG",
+		"img": "img/IMG_1919.JPEG",
 		"coord": [40.630414,22.953661],
 		"icon": "commercial"
 	},
@@ -249,7 +249,7 @@
 		"title": "Restaurant",
 		"type": "Commercial",
 		"description": "",
-		"img": "/img/IMG_1920.JPEG",
+		"img": "img/IMG_1920.JPEG",
 		"coord": [40.628803,22.952653],
 		"icon": "commercial"
 	},
@@ -257,7 +257,7 @@
 		"title": "Municipal Building",
 		"type": "Government",
 		"description": "",
-		"img": "/img/IMG_1921.JPEG",
+		"img": "img/IMG_1921.JPEG",
 		"coord": [40.628625,22.953147],
 		"icon": "commercial"
 	},
@@ -265,7 +265,7 @@
 		"title": "Residential Tower",
 		"type": "Mixed Use",
 		"description": "",
-		"img": "/img/IMG_1922.JPEG",
+		"img": "img/IMG_1922.JPEG",
 		"coord": [40.627347,22.952111],
 		"icon": "residential"
 	},
@@ -273,7 +273,7 @@
 		"title": "Bank",
 		"type": "Commercial",
 		"description": "",
-		"img": "/img/IMG_1925.JPEG",
+		"img": "img/IMG_1925.JPEG",
 		"coord": [40.627767,22.950197],
 		"icon": "commercial"
 	},
@@ -281,7 +281,7 @@
 		"title": "Large Hotel Wall",
 		"type": "Hotel",
 		"description": "",
-		"img": "/img/IMG_1929.JPEG",
+		"img": "img/IMG_1929.JPEG",
 		"coord": [40.626889,22.949514],
 		"icon": "hotel"
 	},
@@ -289,7 +289,7 @@
 		"title": "Large Hotel Wall",
 		"type": "Hotel",
 		"description": "",
-		"img": "/img/IMG_1930.JPEG",
+		"img": "img/IMG_1930.JPEG",
 		"coord": [40.626889,22.949514],
 		"icon": "hotel"
 	},
@@ -297,7 +297,7 @@
 		"title": "Waterfront Hotel Curved Wall",
 		"type": "Hotel",
 		"description": "",
-		"img": "/img/IMG_1931.JPEG",
+		"img": "img/IMG_1931.JPEG",
 		"coord": [40.626992,22.948706],
 		"icon": "hotel"
 	},
@@ -305,7 +305,7 @@
 		"title": "Residential Tower",
 		"type": "Mixed Use",
 		"description": "",
-		"img": "/img/IMG_1932.JPEG",
+		"img": "img/IMG_1932.JPEG",
 		"coord": [40.627047,22.948697],
 		"icon": "residential"
 	},
@@ -313,7 +313,7 @@
 		"title": "Hospital Wall",
 		"type": "Hospital",
 		"description": "",
-		"img": "/img/IMG_1933.JPEG",
+		"img": "img/IMG_1933.JPEG",
 		"coord": [40.629119,22.947431],
 		"icon": "hospital"
 	},
@@ -321,7 +321,7 @@
 		"title": "High Residential Wall",
 		"type": "Residential",
 		"description": "",
-		"img": "/img/IMG_1935.JPEG",
+		"img": "img/IMG_1935.JPEG",
 		"coord": [40.628911,22.946992],
 		"icon": "residential"
 	},
@@ -329,7 +329,7 @@
 		"title": "Thin Residential Wall",
 		"type": "Residential",
 		"description": "",
-		"img": "/img/IMG_1938.JPEG",
+		"img": "img/IMG_1938.JPEG",
 		"coord": [40.629922,22.944850],
 		"icon": "residential"
 	},
@@ -337,7 +337,7 @@
 		"title": "Large Wall",
 		"type": "Residential",
 		"description": "",
-		"img": "/img/IMG_1939.JPEG",
+		"img": "img/IMG_1939.JPEG",
 		"coord": [40.629842,22.944131],
 		"icon": "residential"
 	},
@@ -345,7 +345,7 @@
 		"title": "Storefront",
 		"type": "Commercial",
 		"description": "",
-		"img": "/img/IMG_1940.JPEG",
+		"img": "img/IMG_1940.JPEG",
 		"coord": [40.630139,22.944403],
 		"icon": "commercial"
 	},
@@ -353,7 +353,7 @@
 		"title": "Residential Wall",
 		"type": "Residential",
 		"description": "",
-		"img": "/img/IMG_1941.JPEG",
+		"img": "img/IMG_1941.JPEG",
 		"coord": [40.630742,22.944736],
 		"icon": "residential"
 	},
@@ -361,7 +361,7 @@
 		"title": "Tall Residential Wall",
 		"type": "Residential",
 		"description": "",
-		"img": "/img/IMG_1942.JPEG",
+		"img": "img/IMG_1942.JPEG",
 		"coord": [40.631317,22.943583],
 		"icon": "residential"
 	},
@@ -369,7 +369,7 @@
 		"title": "Mall Wall",
 		"type": "Commercial",
 		"description": "",
-		"img": "/img/IMG_1945.JPEG",
+		"img": "img/IMG_1945.JPEG",
 		"coord": [40.633122,22.940372],
 		"icon": "commercial"
 	},
@@ -377,7 +377,7 @@
 		"title": "Office Wall",
 		"type": "Commercial",
 		"description": "",
-		"img": "/img/IMG_1947.JPEG",
+		"img": "img/IMG_1947.JPEG",
 		"coord": [40.634617,22.939592],
 		"icon": "commercial"
 	},
@@ -385,7 +385,7 @@
 		"title": "Storefront",
 		"type": "Commercial",
 		"description": "",
-		"img": "/img/IMG_1950.JPEG",
+		"img": "img/IMG_1950.JPEG",
 		"coord": [40.634033,22.947800],
 		"icon": "commercial"
 	}
