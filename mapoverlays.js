@@ -80,8 +80,8 @@ var pinTypeNames = ["Hospital Sites", "Hotel Sites", "Residential Sites",
 		    "School Sites", "Abandoned Sites", "Buisiness Sites"];
 Object.keys(pinTypes).forEach(function(pinName) {
 	var pin = L.icon({
-		iconUrl: `/icons/${pinTypes[pinName]}`,
-		shadowUrl: "/icons/pinshadow.svg",
+		iconUrl: `icons/${pinTypes[pinName]}`,
+		shadowUrl: "icons/pinshadow.svg",
 		shadowSize: [30,30],
 		shadowAnchor: [5,24],
 		iconSize: [30,30],
@@ -128,17 +128,17 @@ legend.onAdd = function(map) {
                          <br>
                          <i style="background-image: linear-gradient(to right, blue, green, yellow,  red);"></i> AirBnB Heatmap
 			 <br>
-			 <i style="background-image: url(/icons/residentialpin.svg);"></i> Residential
+			 <i style="background-image: url(icons/residentialpin.svg);"></i> Residential
 			 <br>
-			 <i style="background-image: url(/icons/abandonedpin.svg);"></i> Abandoned
+			 <i style="background-image: url(icons/abandonedpin.svg);"></i> Abandoned
 			 <br>
-			 <i style="background-image: url(/icons/hospitalpin.svg);"></i> Hospital
+			 <i style="background-image: url(icons/hospitalpin.svg);"></i> Hospital
 			 <br>
-			 <i style="background-image: url(/icons/hotelpin.svg);"></i> Hotel
+			 <i style="background-image: url(icons/hotelpin.svg);"></i> Hotel
 			 <br>
-			 <i style="background-image: url(/icons/schoolpin.svg);"></i> School
+			 <i style="background-image: url(icons/schoolpin.svg);"></i> School
 			 <br>
-			 <i style="background-image: url(/icons/commercialpin.svg);"></i> Buisiness/Government
+			 <i style="background-image: url(icons/commercialpin.svg);"></i> Buisiness/Government
 			`;
 	return div;
 };
