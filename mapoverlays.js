@@ -134,7 +134,7 @@ $.getJSON("newsites.json", function(obj) {
 	});
 });
 // Add the legend onto the bottom right corner of the map
-var legend = L.control({position: 'bottomright'});
+var legend = L.control({position: 'bottomleft'});
 legend.onAdd = function(map) {
 	var div = L.DomUtil.create('div', 'info legend');
 	div.innerHTML = `<i style="background: ${greenFill};"></i> Green Space Concentration
