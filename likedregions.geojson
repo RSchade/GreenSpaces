@@ -10,7 +10,7 @@
         {
             "type": "Feature",
             "properties": {
-                "value": 3
+                "value": 9
             },
             "geometry": {
                 "type": "Polygon",
@@ -51,7 +51,7 @@
         {
             "type": "Feature",
             "properties": {
-                "value": 4
+                "value": 6
             },
             "geometry": {
                 "type": "Polygon",
@@ -92,7 +92,7 @@
         {
             "type": "Feature",
             "properties": {
-                "value": 5
+                "value": 13
             },
             "geometry": {
                 "type": "Polygon",
@@ -125,7 +125,7 @@
         {
             "type": "Feature",
             "properties": {
-                "value": 11
+                "value": 26
             },
             "geometry": {
                 "type": "Polygon",
@@ -178,7 +178,7 @@
         {
             "type": "Feature",
             "properties": {
-                "value": 6
+                "value": 18
             },
             "geometry": {
                 "type": "Polygon",
@@ -219,7 +219,7 @@
         {
             "type": "Feature",
             "properties": {
-                "value": 15
+                "value": 52
             },
             "geometry": {
                 "type": "Polygon",
@@ -260,7 +260,7 @@
         {
             "type": "Feature",
             "properties": {
-                "value": 10
+                "value": 27
             },
             "geometry": {
                 "type": "Polygon",

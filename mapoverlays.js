@@ -63,7 +63,7 @@ var dislikeFill = "#ff0000";
 			return {
 				stroke: 0,
 				fillColor: layerData[2],
-				fillOpacity: feature.properties.value/20
+				fillOpacity: feature.properties.value/40
 			}
 		}}).addTo(map);
 		layers.addOverlay(region, layerData[1]);

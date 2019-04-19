@@ -11,6 +11,16 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+		<!-- Responsive design -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<div id="map" style="height: 80vh"></div>		
@@ -69,8 +79,8 @@
 				</p>
 				<p class="card-text">
 					<b>Liked and Disliked Regions</b> Among other questions,
-					<img style="float: right; padding-left: 1em;" 
-					 src="graphics/likedislikeregions.jpg" width=400\>
+					<img style="float: right; padding-left: 1em; width: 50%; max-width: 350px;" 
+					 src="graphics/likedislikeregions.jpg"\>
 					questionnaire respondents were asked their favorite and
 					least favorite regions of Thessaloniki given seven regions
 					shown to the side. The brightest color on the overlay
@@ -111,11 +121,11 @@
 					More information about each site and how it was selected
 					as well as mock ups are shown below.
 				</p>
-				<img src="graphics/sitemap.png" style="display: block; margin-left: auto; margin-right: auto;" width=500\>
+				<img src="graphics/sitemap.png" style="display: block; margin-left: auto; margin-right: auto; width: 75%; max-width: 500px;"\>
 			</div>
 		</div>
 		<div>
-		<div class="card-columns" style="max-width: 3000px; margin: 0 auto;">
+		<div class="card-columns" style="max-width: 85%; margin: 0 auto;">
 		<div class="card potential-card">
 			<div class="img-row">
 				<a href="graphics/potential/potentialsiteonebefore.jpg" target="_blank"><img class="card-img-top img-col" src="graphics/potential/thumb_potentialsiteonebefore.jpg"\></a>
@@ -184,44 +194,70 @@
 		</div>
 		</div>
 		</div>
-		<div style="overflow-y: hidden">
-		<div class="card-group scroll-cards">
+		<div class="card body-card">
+			<div class="card-body">
+				<h3 class="card-title">Questionnaire Information</h3>
+				<p class="card-text">
+					The questionnaire was conducted in person and online over
+					Qualtrics. Qualitative response information was used 
+					as a supplement to the spatial analysis when considering
+					sites, also to draw conclusions about citizen opinions
+					regarding green spaces and vertical gardens. A sample
+					of the questionnaire along with the data collected is
+					available at the bottom of the page. What follows is a
+					summary of the survey demographics.
+				</p>
+			</div>
+		</div>
+		<div style="max-width: 800px; margin: 0 auto;" class="card-group body-card">
 			<div class="card">
 				<img class="card-img-top" src="graphics/homesurveys.png"\>
 				<div class="card-body">
-					<h5 class="card-title">Living locations by zone</h5>
-					<p class="card-text">Where different people lived</p>
+					<h5 class="card-title">Home Location by Zone</h5>
+					<p class="card-text">
+						This question was optional. Home location
+						of the people who took the survey, 
+						lived in the highlighted regions, 
+						and chose to respond.
+					</p>
 				</div>
 			</div>
 			<div class="card">
 				<img class="card-img-top" src="graphics/worksurveys.png"\>
 				<div class="card-body">
-					<h5 class="card-title">Working locations by zone</h5>
-					<p class="card-text">People living in the different zones we surveyed</p>
-				</div>
-			</div>
-			<div class="card">
-				<img class="card-img-top" src="graphics/agedemo.png"\>
-				<div class="card-body">
-					<h5 class="card-title">Ages of those who answered</h5>
-				</div>
-			</div>
-			<div class="card">
-				<img class="card-img-top" src="graphics/genderdemo.png"\>
-				<div class="card-body">
-					<h5 class="card-title">Genders of those who answered</h5>
+					<h5 class="card-title">Work Location by Zone</h5>
+					<p class="card-text">
+						This question was optional. Work location of the
+						people who took the survey, work in the highlighted
+						regions, and chose to respond.
+					</p>
 				</div>
 			</div>
 		</div>
+		<div style="max-width: 800px; padding-top: 1em; margin: 0 auto;" class="card-group body-card">
+			<div class="card">
+				<img class="card-img-top" src="graphics/agedemo.svg"\>
+			</div>
+			<div class="card">
+				<img class="card-img-top" src="graphics/genderdemo.svg"\>
+			</div>
 		</div>
-		<!--
-		<div class="card body-card">
+		<div class="card body-card" style="max-width: 800px; margin: 0 auto; margin-top: 1em;">
 			<div class="card-body">
-				<h5 class="card-title">Download the Report</h5>
-				<button type="button" class="btn btn-primary btn-lg btn-block">Download</button>
+				<h3 class="card-title">Downloads and Licenses</h3>
+				<p class="card-text">
+					Below are buttons to download the various data collected
+					throughout the project. All the images on this website 
+					as well as the website code are licensed under 
+					Creative Commons Attribution-ShareAlike 4.0 International.
+				</p>
+				<a href="distrib/questionnairedata.xlsx" class="btn btn-primary btn-lg btn-block">Download Questionnaire Data</a>
+				<a href="distrib/samplequestionnaire.docx" class="btn btn-primary btn-lg btn-block">Download Sample Questionnaire</a>
 			</div>
-		</div> 
-		-->
+		</div>
+		<div style="padding-top: 1em; max-width: 800px; margin: 0 auto; text-align: center;">
+			<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Green High Five: Vertical Gardens along the Egnatia Corridor</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Olivia Foster, Hannah Larochelle, Tomás Ringer-Silva, Raymond Schade</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+		</div>
 		<script type="text/javascript" src="mapoverlays.js"></script>		
 	</body>
 </html>
