@@ -19,11 +19,15 @@ var map = new L.Map("map", {
 });
 map.addLayer(layer);
 */
-var layers = L.control.layers({},{}).addTo(map);
+// add the layers panel, make sure they are sorted when new layers are added
+var layers = L.control.layers({}, {}, {sortLayers: true}).addTo(map);
+// add the scale
+L.control.scale().addTo(map);
 // add the AirBnB cost heatmap
 $.getJSON("airbnbcost.json", function(obj) {
 	var heat = L.heatLayer(obj, {radius: 15}).addTo(map);
 	layers.addOverlay(heat, "AirBnB Cost");
+	map.removeLayer(heat);
 });
 // add the relative green space for 200m and 400m
 var greenFill = "#30db47";
@@ -49,25 +53,23 @@ var greenFill = "#30db47";
 	});
 });
 // add like and dislike layers
-$.getJSON("likedregions.geojson", function(obj) {
-	var likedRegion = L.geoJSON(obj, {style: function(feature) {
+var likeFill = "#30db47";
+var dislikeFill = "#ff0000";
+[["likedregions.geojson", "Liked Regions", likeFill],
+ ["dislikedregions.geojson", "Disliked Regions", dislikeFill]].forEach(function(layerData) {
+	$.getJSON(layerData[0], function(obj) {
+		var region = L.geoJSON(obj, {style: function(feature) {
+			// divide the fillOpacity by the size of the sample (manual update)
 			return {
 				stroke: 0,
-				fillColor: "#30db47",
+				fillColor: layerData[2],
 				fillOpacity: feature.properties.value/20
 			}
 		}}).addTo(map);
-	layers.addOverlay(likedRegion, "Liked Regions");
-});
-$.getJSON("dislikedregions.geojson", function(obj) {
-	var dislikedRegion = L.geoJSON(obj, {style: function(feature) {
-			return {
-				stroke: 0,
-				fillColor: "#ff0000",
-				fillOpacity: feature.properties.value/20
-			}
-		}}).addTo(map);
-	layers.addOverlay(dislikedRegion, "Disliked Regions");
+		layers.addOverlay(region, layerData[1]);
+		// remove from the map initially, keep it in the layers dialog
+		map.removeLayer(region);
+	});
 });
 // add pedestrian axis layers
 $.getJSON("pedestrianaxis.geojson", function(obj) {
@@ -80,6 +82,7 @@ $.getJSON("pedestrianaxis.geojson", function(obj) {
 		}
 	}).addTo(map);
 	layers.addOverlay(pedestrianData, "Pedestrian Data");
+	map.removeLayer(pedestrianData);
 });
 // create the icons for the markers
 var pinTypes = {
@@ -90,8 +93,8 @@ var pinTypes = {
 	"abandoned": "abandonedpin.svg",
 	"commercial": "commercialpin.svg"
 }
-var pinTypeNames = ["Hospital Sites", "Hotel Sites", "Residential Sites",
-		    "School Sites", "Abandoned Sites", "Buisiness Sites"];
+var pinTypeNames = ["Hospital Sites", "Hotel Sites", "Mixed Use Sites",
+		    "School Sites", "Abandoned Sites", "Buisiness/Municipal Sites"];
 Object.keys(pinTypes).forEach(function(pinName) {
 	var pin = L.icon({
 		iconUrl: `icons/${pinTypes[pinName]}`,
@@ -123,10 +126,13 @@ $.getJSON("newsites.json", function(obj) {
 		}
 		var curMarker = L.marker(site.coord, options);
 		siteLayers[site.icon].addLayer(curMarker);
+		var imgURL = site.img.split("/");
+		imgURL[imgURL.length-1] = "thumb_"+imgURL[imgURL.length-1];
+		imgURL = imgURL.join("/");
 		var popupHTML =
 			`<h3 style="margin-bottom: 0">${site.title}</h3>
 			 <h6 style="margin: 0">${site.type}</h6>
-			 <img width=250 style="display: inline-block" src='${site.img}'>
+			 <a href='${site.img}' target="_blank"><img width=250 style="display: inline-block" src='${imgURL}'></a>
 			 <p>${site.description}</p>`
 		var curPopup = L.popup({className: "greensite-popup"})
 			.setContent(popupHTML);
@@ -142,7 +148,13 @@ legend.onAdd = function(map) {
                          <br>
                          <i style="background-image: linear-gradient(to right, blue, green, yellow,  red);"></i> AirBnB Heatmap
 			 <br>
-			 <i style="background-image: url(icons/residentialpin.svg);"></i> Residential
+			 <i style="background: ${likeFill};"></i> Liked Regions
+			 <br>
+			 <i style="background: ${dislikeFill};"></i> Disliked Regions
+			 <br>
+			 <i style="background-image: linear-gradient(to right, white, red);"></i> Pedestrian Levels
+			 <br>
+			 <i style="background-image: url(icons/residentialpin.svg);"></i> Mixed Use
 			 <br>
 			 <i style="background-image: url(icons/abandonedpin.svg);"></i> Abandoned
 			 <br>

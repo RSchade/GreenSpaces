@@ -238,8 +238,8 @@
 		"icon": "hotel"
 	},
 	{
-		"title": "Large Storefront Wall",
-		"type": "Commercial",
+		"title": "Municipal Building",
+		"type": "Government",
 		"description": "",
 		"img": "img/IMG_1919.JPEG",
 		"coord": [40.630414,22.953661],
