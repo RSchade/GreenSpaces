@@ -36,3 +36,15 @@
 	width: 3000px;
 	padding: 1rem;
 }
+
+.potential-card {
+	margin: 1rem;
+}
+
+.img-col {
+	flex: 33.3%;
+}
+
+.img-row {
+	display: flex;
+}
