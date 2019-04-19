@@ -1,7 +1,8 @@
 // initialize with toner-lite from stamen
 var map = new L.map("map", {
 	center: new L.LatLng(40.635, 22.945),
-	zoom: 15
+	zoom: 15,
+	scrollWheelZoom: false
 });
 var Stamen_Toner = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.{ext}', {
    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
@@ -11,14 +12,6 @@ var Stamen_Toner = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-
    ext: 'png'
 });
 map.addLayer(Stamen_Toner);
-/* non ssl tiles
-var layer = new L.StamenTileLayer("toner-lite");
-var map = new L.Map("map", {
-    center: new L.LatLng(40.635, 22.945),
-    zoom: 15
-});
-map.addLayer(layer);
-*/
 // add the layers panel, make sure they are sorted when new layers are added
 var layers = L.control.layers({}, {}, {sortLayers: true}).addTo(map);
 // add the scale
