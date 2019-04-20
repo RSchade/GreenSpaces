@@ -23,15 +23,29 @@ $.getJSON("airbnbcost.json", function(obj) {
 	map.removeLayer(heat);
 });
 // add the relative green space for 200m and 400m
+// also add the 200m site overlay layers
 var greenFill = "#30db47";
-["200m", "400m"].forEach(function(radius) {
-	$.getJSON(`greenSpaces_${radius}_castle.geojson`, function(obj) {
+var highestAmts = {};
+// the first given geojson of a given type sets the 'highestAmt' number
+//[["greenSpaces_200m.geojson", "R.G.S (200m w/out castle)", true, "200"],
+// ["greenSpaces_400m.geojson", "R.G.S (400m w/out castle)", true, "400"],
+ [["greenSpaces_200m_castle.geojson", "Relative Green Space (200m)", true, "200"],
+ ["greenSpaces_400m_castle.geojson", "Relative Green Space (400m)", true, "400"]]//,
+// ["greenSpaces_200m_studiooptic.geojson", "Add Studio Optic (200m)", false, "200"]]
+   .forEach(function(overlayInfo) {
+	$.getJSON(overlayInfo[0], function(obj) {
 		var highestAmt = 0;
 		obj.forEach(function(feature) {
 			if(highestAmt < feature.properties.greenSpaceM) {
 				highestAmt = feature.properties.greenSpaceM;
 			}
 		});
+		// populate 200/400 if necessary
+		if(!highestAmts[overlayInfo[3]]) {
+			highestAmts[overlayInfo[3]] = highestAmt;
+		} else {
+			highestAmt = highestAmts[overlayInfo[3]];
+		}
 		var greenSpace = L.geoJSON(obj, {
 	   		style: function(feature) {
 			percent = feature.properties.greenSpaceM/highestAmt;
@@ -42,7 +56,12 @@ var greenFill = "#30db47";
 			};
 	   	}
 		}).addTo(map);
-		layers.addBaseLayer(greenSpace, `Relative Green Space (${radius})`);
+		if(overlayInfo[2]) {
+			layers.addBaseLayer(greenSpace, overlayInfo[1]);
+		} else {
+			layers.addOverlay(greenSpace, overlayInfo[1]);
+			map.removeLayer(greenSpace);
+		}
 	});
 });
 // add like and dislike layers
