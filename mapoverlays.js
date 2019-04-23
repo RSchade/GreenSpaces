@@ -29,8 +29,8 @@ var highestAmts = {};
 // the first given geojson of a given type sets the 'highestAmt' number
 //[["greenSpaces_200m.geojson", "R.G.S (200m w/out castle)", true, "200"],
 // ["greenSpaces_400m.geojson", "R.G.S (400m w/out castle)", true, "400"],
- [["greenSpaces_200m_castle.geojson", "Relative Green Space (200m)", true, "200"],
- ["greenSpaces_400m_castle.geojson", "Relative Green Space (400m)", true, "400"]]//,
+ [["greenSpaces_200m_castle.geojson", "Relative Green Space (200m)", false, "200"],
+ ["greenSpaces_400m_castle.geojson", "Relative Green Space (400m)", false, "400"]]//,
 // ["greenSpaces_200m_studiooptic.geojson", "Add Studio Optic (200m)", false, "200"]]
    .forEach(function(overlayInfo) {
 	$.getJSON(overlayInfo[0], function(obj) {
@@ -65,6 +65,16 @@ var highestAmts = {};
 	});
 });
 // add like and dislike layers
+// display how many respondents chose the particular region when clicked
+function clickLikeDislike(e) {
+	var layer = e.target;
+	var responded = layer.feature.properties.value;
+	var popup = L.popup()
+		.setLatLng(e.latlng)
+		.setContent(`Chosen by ${responded} questionnaire respondents`)
+		.openOn(map);
+}
+
 var likeFill = "#30db47";
 var dislikeFill = "#ff0000";
 [["likedregions.geojson", "Liked Regions", likeFill],
@@ -77,12 +87,19 @@ var dislikeFill = "#ff0000";
 				fillColor: layerData[2],
 				fillOpacity: feature.properties.value/40
 			}
-		}}).addTo(map);
+		},
+		onEachFeature: function(feature, layer) {
+				layer.on({
+					click: clickLikeDislike
+				});
+			}
+		}).addTo(map);
 		layers.addOverlay(region, layerData[1]);
 		// remove from the map initially, keep it in the layers dialog
 		map.removeLayer(region);
 	});
 });
+
 // add pedestrian axis layers
 $.getJSON("pedestrianaxis.geojson", function(obj) {
 	var pedestrianData = L.geoJSON(obj, {
